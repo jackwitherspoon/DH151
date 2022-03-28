@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Week 1 Lab</title>
+	<meta charset="utf-8" />
+
+
+
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+
+
+
+</head>
+<body>
+
+	<div class="header">
+		<h1>Frequent Locations</h1>
+	</div>
+	<div class="sidebar">
+		<b>List of Locations:</b>
+		<p>1. Home
+			<br>2. School
+			<br>3. Work
+		</p>
+		
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+
+
+    <script>
+            var map = L.map('map').setView([34.0697,-118.4432], 10);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+
+	
+
+	var marker = L.marker([33.80866507272877, -118.37989061987336]).addTo(map)
+            .bindPopup('1. My Home<br> Where I Eat and Sleep')
+            .openPopup();
+
+
+    var marker = L.marker([34.0697,-118.4432]).addTo(map)
+            .bindPopup('2. UCLA (School)<br> Where I go to learn')
+            .openPopup();
+
+	var marker = L.marker([34.050636034813785, -118.26135651801836]).addTo(map)
+            .bindPopup('3. Work<br> Where I go to make money')
+            .openPopup();
+			
+			
+	
+    </script>
+
+
+</body>
+</html>
+
+
+
+
