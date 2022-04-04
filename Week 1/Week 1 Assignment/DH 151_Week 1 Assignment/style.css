@@ -1,0 +1,107 @@
+
+
+#body{
+  
+  
+  margin:0;
+}
+
+#main{
+  background-color:#FFC0CB;
+
+}
+
+#background{
+      position: relative; top: 10px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+}
+
+
+
+
+#resume{
+  position: relative; top: -445px; bottom: -200px; left: 200px; right: 200px;
+
+}
+
+#resume:hover {
+  transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+
+#research{
+  position: relative; top: -435px; bottom: -200px; left: 300px; right: 200px;
+
+}
+
+#research:hover{
+  transform: translateY(-10px);
+
+}
+
+
+
+
+
+
+
+
+#about{
+  position: relative; top: -535px; bottom: -200px; left: 400px; right: 200px;
+
+}
+
+#about:hover{
+  transform: translateY(-10px);
+}
+
+
+
+
+
+
+
+#contact{
+  position: relative; top: -425px; bottom: -200px; left: 225px; right: -600px;
+
+}
+
+#contact:hover{
+  transform: translateY(-10px);
+}
+
+
+
+
+
+
+#tag{
+  position: relative; top: -820px; bottom: 100px; left: -845px; right: 0px;
+
+}
+
+
+#baseboard{
+  display:block;
+  margin: 0;
+  width:1440;
+
+
+
+}
+
+#cat{
+
+  position: absolute; top: 1400px; bottom: 0px; left: 0x; right: 200px;
+  width: 500px;
+  padding: 0%;
+
+}
