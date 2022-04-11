@@ -1,0 +1,38 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+#map {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 80px 1fr;
+	grid-template-columns: 400px 1fr;
+	grid-template-areas: 
+	"header header"
+	"sidebar content";
+}
+
+.header {
+	grid-area: header;
+	padding:10px;
+	background-color: #4169e1;
+    border-style: solid;
+	color: white;
+	font-size: 2em;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	padding:10px;
+    border-style: solid;
+	background-color: rgb(255, 255, 255);
+}
+
+.content {
+	grid-area: content;
+}
