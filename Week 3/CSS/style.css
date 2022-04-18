@@ -1,0 +1,57 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+#map {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 120px 1fr;
+	grid-template-columns: 50% 50%; /* change to 50/50 split */
+	grid-template-areas: 
+	"header header"
+	"content sidebar"; /* swapped places */
+}
+
+
+.header {
+	grid-area: header;
+	padding:10px;
+	background-color: #4169e1;
+    border-style: solid;
+	color: white;
+	font-size: 2em;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	padding:10px;
+    border-style: solid;
+	background-color: rgb(172, 236, 255);
+}
+
+.content {
+	grid-area: content;
+
+}
+
+
+
+.sidebar-item {
+	padding: 10px; /* adds inner padding */
+	background: gainsboro; /* background color of the card */
+	border: 1px solid gray; /* border width and color */
+	margin: 5px; /* outer padding */
+	cursor: pointer; /* change cursor to hand on hover */
+}
+
+
+
+.sidebar-item:hover {
+	transform: translateY(-10px);
+	background-color: yellow;
+  }
