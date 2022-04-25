@@ -1,0 +1,64 @@
+body,html {
+	margin:0;
+	height:100%;
+	width:100%;
+}
+
+#map {
+	height: 100%;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 80px 1fr 50px;
+	grid-template-columns: 50% 50%;
+	grid-template-areas: 
+	"header header"
+	"sidebar content"
+	"footer footer";
+}
+
+.header {
+	grid-area: header;
+	padding:10px;
+	background-color: rgb(194, 238, 255);
+	color: rgb(0, 0, 0);
+	font-size: 2em;
+	border: solid;
+}
+
+.sidebar {
+	color: rgb(0, 0, 0);
+	grid-area: sidebar;
+	padding:10px;
+	background-color: rgb(255, 255, 255);
+	overflow: auto;
+	border: solid;
+}
+
+.content {
+	grid-area: content;
+}
+
+.footer {
+	grid-area: footer;
+	padding:10px;
+	background-color: rgb(175, 175, 175);
+}
+
+
+.sidebar-item {
+	padding: 10px; /* adds inner padding */
+	background: rgb(255, 255, 255); /* background color of the card */
+	border: 2px solid gray; /* border width and color */
+	margin: 5px; /* outer padding */
+	cursor: pointer; /* change cursor to hand on hover */
+}
+
+.sidebar-item:hover {
+	transform: translateY(-10px);
+	background-color: rgb(194, 238, 255);
+  }
+
+
+  

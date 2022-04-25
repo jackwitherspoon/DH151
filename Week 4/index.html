@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>World</title>
+	<meta charset="utf-8" />
+
+	<!-- style sheets -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- leaflet -->
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+	<!-- jquery -->
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- papaparse -->
+    <script src="js/papaparse.min.js"></script>
+
+</head>
+<body>
+
+	<div class="header">
+		Chef Jack's Kitchen: Map
+	</div>
+	<div class="sidebar">
+		<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIQb1uA388xi-d2fWaAY3qOOgzExGoxf8DdA&usqp=CAU" alt="Italian Trulli">
+		<h2>About: </h2>
+		<p>
+			In 2016, I had the idea of crossing a cookie with a scone. 
+			I got so inspired I spent the next two years perfecting and developing my idea. 
+			I wanted the delicious taste and texture of a scone in the small bite of a cookie. 
+			The result are my deliciously unique Skonies. Baked in small batches, Skonies are made with only the highest quality, all natural ingredients.
+			part of the proceeds will be donated to the Jack Witherspoon endowment for cancer research. To focus on our mission of giving back and inspiring other in need we are currently carried at some of the largest hosptials in california.
+
+		</p>
+
+
+		
+		<h3>Current Accounts: </h3>
+	</div>
+	<div class="content">
+		<div id="map"></div>
+	</div>
+	<div class="footer">
+		Source: <a href="https://data.chhs.ca.gov/dataset/hospital-building-data">Department of Health Care Access and Information</a>
+	</div>
+
+	<script src="js/map.js"></script>
+
+</body>
+</html>
